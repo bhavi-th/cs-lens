@@ -2,7 +2,7 @@ import "./Home.css"
 
 export default function Home() {
     return (
-        <div className="Home">
+        <div className="Home" id="home">
             <span>
                 Welcome to the Future of Object Detection!,
                 <p>

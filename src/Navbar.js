@@ -3,11 +3,11 @@ import "./Navbar.css"
 export default function Navbar() {
     return (
         <nav>
-            <div id="logo">
+            <a href="home" id="logo">
                 CS Lens
-            </div>
+            </a>
 
-            <a id="tryit" href="#tryitnow">
+            <a id="tryit" href="#cam">
                 <span>Try it now</span>
             </a>
         </nav>

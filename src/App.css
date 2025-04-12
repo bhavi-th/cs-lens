@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: radial-gradient(circle, rgb(0, 130, 170), rgb(0, 140, 100));
 }
