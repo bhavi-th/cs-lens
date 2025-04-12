@@ -7,14 +7,20 @@ const Cam = () => {
 
     const startCamera = async () => {
         try {
-            const mediaStream = await navigator.mediaDevices.getUserMedia({ video: true });
+            const mediaStream = await navigator.mediaDevices.getUserMedia({
+                video: {
+                    facingMode: "environment" // Prefer back camera but fallback if unavailable
+                }
+            });
             if (videoRef.current) {
                 videoRef.current.srcObject = mediaStream; // Set the video stream to the video element
             }
             setStream(mediaStream); // Save the media stream in the state
         } catch (error) {
             console.error("Camera access error:", error); // Handle errors gracefully
-            alert("Could not access the camera. Please check permissions.");
+            alert(
+                "Could not access the camera. Please check permissions or ensure the device has a compatible camera."
+            );
         }
     };
 

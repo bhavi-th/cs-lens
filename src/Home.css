@@ -9,7 +9,10 @@
 }
 
 .Home span {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    gap: 10vmin;
 }
 
 .Home span::first-letter {
@@ -18,4 +21,18 @@
 
 .Home p {
     font-size: 3vmin;
+}
+
+@media screen and (max-width: 720px) {
+    .Home {
+        font-size: 6vmin;
+    }
+
+    .Home span::first-letter {
+        font-size: 7vmin;
+    }
+
+    .Home p {
+        font-size: 3.5vmin;
+    }
 }

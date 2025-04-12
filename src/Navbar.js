@@ -3,7 +3,7 @@ import "./Navbar.css"
 export default function Navbar() {
     return (
         <nav>
-            <a href="home" id="logo">
+            <a href="#home" id="logo">
                 CS Lens
             </a>
 

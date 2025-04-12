@@ -49,3 +49,13 @@ nav span {
     display: block;
     transform: skew(-15deg);
 }
+
+@media screen and (max-width: 720px) {
+    #logo {
+        font-size: 6.5vmin;
+    }
+
+    #tryit {
+        font-size: 3.75vmin;
+    }
+}
