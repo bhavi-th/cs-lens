@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif, Arial;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: radial-gradient(circle, rgb(0, 130, 170), rgb(0, 140, 100));
+}

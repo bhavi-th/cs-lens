@@ -1,0 +1,21 @@
+.Home {
+    color: white;
+    font-size: 5vmin;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+
+.Home span {
+    text-align: center;
+}
+
+.Home span::first-letter {
+    font-size: 6vmin;
+}
+
+.Home p {
+    font-size: 3vmin;
+}
